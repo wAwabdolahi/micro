@@ -145,17 +145,13 @@ padding: 60px 30px 10px;
 opacity: 0.9;
 }
 .fallow{
-    margin-top: 100px;
-    margin-bottom: 40px;
-    display: flex;
-    justify-self: flex-start;
-    align-items: center;
+   display: flex;
+   align-items: center;
+   justify-self: flex-start;
+   margin: 30px 0 30px;
 }
-.fallow .content{
-    color: #000;
-}
-.fallow a{
-    margin: 0px 10px 20px;
+.fallow *{
+    margin-right: 10px;
 }
 .link{
     margin-top: 100px;
@@ -215,6 +211,15 @@ opacity: 0.9;
     margin-bottom: 20px;
 }
 @media (max-width:500px){
+    .fallow{
+        display: flex;
+        align-items: flex-start;
+        justify-self: flex-start;
+        margin: 30px 0 30px;
+     }
+     .fallow *{
+         margin-right: 10px;
+     }
      .menu-items ul{
         font-size: 11px;
         margin: 0px;
@@ -228,12 +233,15 @@ opacity: 0.9;
         grid-template-columns: repeat(1,1fr);
     }
     .xcontent{
-        margin-left: 20px;
+text-align: center;
+        width: 100%;
+        
     }
     .xcontent, .xcontent h2{
         padding: 5px;
     }
     .xcontent p{
+        display: none;
         font-size: 13px;
     }
     .carbon .content{
@@ -278,5 +286,27 @@ opacity: 0.9;
         padding-left: 20px;
         background: #f2f2f2;
         color: black;
+    }
+    .xcontent{
+        margin-left: 20px;
+    }
+    .xcontent, .xcontent h2{
+        padding: 15px;
+    }
+    .xcontent p{
+        font-size: 14px;
+    }
+    .carbon .content{
+        margin-top: 120px;
+        width: 100%;
+        align-content: center;
+        text-align: center;
+        padding: 5px;
+    }
+    .carbon .content p{
+        font-size: 14px;
+    }
+    .fallow{
+        margin: 10px auto;
     }
 }
